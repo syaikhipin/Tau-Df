@@ -1,7 +1,5 @@
 # R022 — reviewer ablations
 
-Driver: `run_r022_ablation.py`; frozen output: `r022_ablation.json`.
-
 Two checks requested in review, plus the seed range quoted in the revision.
 
 ## 1. Frozen-kernel bootstrap

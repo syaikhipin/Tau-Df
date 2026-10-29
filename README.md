@@ -10,36 +10,22 @@ manuscript source is not included.
 ## Contents
 
 ```
-data/
-  taiwan_credit.npz        Taiwan credit-default arrays (Yeh & Lien 2009)
-  LICENSE-lkbook           MIT license of the package the data came from
-experiments/
-  E1/                      ledger, fusion, robustness, capacity
-    exp1.py                independent re-implementation
-    run_r003_crosscheck.py  ours vs the reference implementation
-    run_m1_seeds.py        ledger + fusion, 3 seeds x 2 datasets
-    run_r017_reduced_n.py  reduced-support ablations
-    run_r018_capacity.py   capacity map
-    results/               frozen JSON/CSV outputs
-  E2/                      tau-df diagnostics
-    exp2.py                synthetic harness + tau statistics
-    run_m2_gate.py         synthetic gate
-    run_m3_real_data.py    real support folds + threshold rule
-    run_r022_ablation.py   frozen-kernel + noise-variance ablations
-    results/               frozen JSON outputs and notes
-  figures/
-    make_paper_figures.py  regenerates figures from frozen results
-figures/                   generated PDF/PNG figures
+data/                     Taiwan credit-default arrays and license
+experiments/E1/           verification drivers and frozen results
+experiments/E2/           diagnostic drivers and frozen results
+experiments/figures/      figure generator
+figures/                  generated PDF/PNG figures
+reproduce.sh              runs every driver and regenerates the figures
 ```
 
 ## Data
 
-`data/taiwan_credit.npz` is the Taiwan credit-card default dataset (UCI Machine
-Learning Repository ID 350; Yeh & Lien 2009). It is copied from the
-MIT-licensed `lkbook` package; see `data/LICENSE-lkbook`.
+The `data/` directory holds the Taiwan credit-card default dataset (UCI Machine
+Learning Repository ID 350; Yeh & Lien 2009), copied from the MIT-licensed
+reference package. See the note and license in that directory.
 
-California housing (Pace & Barry 1997) is fetched at runtime by
-`sklearn.datasets.fetch_california_housing`; no local copy is needed.
+California housing (Pace & Barry 1997) is fetched at runtime by scikit-learn; no
+local copy is needed.
 
 ## Environment
 
@@ -50,8 +36,7 @@ python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-The reference cross-check (`run_r003_crosscheck.py`) also needs the upstream
-`lkbook` package:
+The reference cross-check also needs the upstream package:
 
 ```bash
 .venv/bin/pip install "lkbook @ git+https://github.com/asudjianto-xml/Learned-Kernel"
@@ -62,33 +47,19 @@ The reference cross-check (`run_r003_crosscheck.py`) also needs the upstream
 Run from the repository root:
 
 ```bash
-.venv/bin/python experiments/E1/run_r003_crosscheck.py    # ours vs upstream
-.venv/bin/python experiments/E1/run_m1_seeds.py           # ledger + fusion, 3 seeds
-.venv/bin/python experiments/E1/run_r017_reduced_n.py     # reduced-support folds
-.venv/bin/python experiments/E1/run_r018_capacity.py      # capacity map
-.venv/bin/python experiments/E2/run_m2_gate.py            # synthetic gate
-.venv/bin/python experiments/E2/run_m3_real_data.py       # real support folds
-.venv/bin/python experiments/E2/run_r022_ablation.py      # frozen/variance ablations
-.venv/bin/python experiments/figures/make_paper_figures.py
+bash reproduce.sh
 ```
 
-Each driver writes into its own `results/` directory. Split sizes, seeds, grids,
-and bootstrap counts are config constants at the top of `exp1.py` and `exp2.py`.
-The committed `results/` files are the exact inputs used by the figures and
-tables in the paper.
+The script runs the cross-check, ledger and fusion experiments, reduced-support
+ablations, capacity map, synthetic gate, real-data diagnostic, reviewer
+ablations, and figure regeneration. Each driver writes into its own results
+directory. Split sizes, seeds, grids, and bootstrap counts are config constants
+at the top of the two experiment modules.
 
-## Result map
-
-- `E1/results/table1_california_ledger.csv`, `table2_taiwan_ledger.csv`,
-  `m1_seeds.json`: support/query ledger and fusion selection.
-- `E1/results/r003_crosscheck.json`: cross-check against the reference
-  implementation.
-- `E1/results/r017_reduced_n.json`: reduced-support ablations.
-- `E1/results/r018_capacity_map.json`: capacity map.
-- `E2/results/m2_gate.json`: synthetic provenance test.
-- `E2/results/m3_real_data.json`: tau-df on real support folds, seed 0.
-- `E2/results/r022_ablation.json`: frozen-kernel and noise-variance ablations,
-  plus seeds 0-2.
+The committed result files are the exact inputs used by the figures and tables
+in the paper. Result directories contain the ledger and fusion tables, the
+cross-check, reduced-support and capacity outputs, the synthetic gate, real-data
+diagnostics, and the frozen-kernel and noise-variance ablations.
 
 ## Sources
 

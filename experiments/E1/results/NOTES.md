@@ -1,7 +1,7 @@
 # E1 results notes (M1, runs R004–R007)
 
 ## Outcome
-7/8 criteria PASS. Results in m1_seeds.json, table1/table2 CSVs.
+7/8 criteria PASS. Results are the JSON and CSV files in this directory.
 
 ## The one FLAG — and why it sharpens the claim
 `tw_leaf_largest_gap` FAILS: on Taiwan the raw gap ranking is RBF (1.356) > leaf (0.972) > ARD (0.919).

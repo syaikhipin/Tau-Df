@@ -35,7 +35,7 @@ rank correlation.
 ## Run #2 outcome (revised criteria)
 Every substantive check PASSED. The gate script printed PIVOT only because
 ρ(tau_df, dose) = 0.800 (exactly 8/10) fails `>= 0.8` in binary floating point —
-fixed with a 1e-9 tolerance in run #3. Run #2's JSON preserved as m2_gate_run2.json.
+fixed with a 1e-9 tolerance in run #3. Run #2's JSON is preserved in this directory.
 
 Scientific findings from run #2:
 - **τ-df is the winning statistic.** Separation 10× (min label-fitted 34.6 vs max
