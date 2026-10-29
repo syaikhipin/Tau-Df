@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Internal project material, not part of the public artifact.
+CONTEXT.md
+decisions/
+notes/
+refine-logs/
+paper/
+
+# LaTeX build products (if paper sources are added later).
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

@@ -1,0 +1,228 @@
+{
+  "25pct": {
+    "n_sup": 200,
+    "n_qry": 200,
+    "cells": [
+      {
+        "seed": 0,
+        "gaps": {
+          "RBF (chosen)": 0.3521112571933901,
+          "ARD (learned)": 0.12545474452487937,
+          "leaf / tree": 0.3968388268380685
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 1.0,
+          "leaf / tree": 0.0
+        },
+        "rmse_insample": 0.671069151363391,
+        "rmse_query": 0.6767432077836619,
+        "query_beats": false
+      },
+      {
+        "seed": 1,
+        "gaps": {
+          "RBF (chosen)": 0.4171700421676764,
+          "ARD (learned)": 0.1640521342975051,
+          "leaf / tree": 0.31998158471583316
+        },
+        "leaf_is_top": false,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.16666666666666666,
+          "ARD (learned)": 0.6666666666666666,
+          "leaf / tree": 0.16666666666666666
+        },
+        "rmse_insample": 0.6722562893570238,
+        "rmse_query": 0.6225242385528106,
+        "query_beats": true
+      },
+      {
+        "seed": 2,
+        "gaps": {
+          "RBF (chosen)": 0.3989099987578457,
+          "ARD (learned)": 0.10846389168174464,
+          "leaf / tree": 0.3653071125591404
+        },
+        "leaf_is_top": false,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 1.0,
+          "leaf / tree": 0.0
+        },
+        "rmse_insample": 0.6962063159317509,
+        "rmse_query": 0.7478733055395527,
+        "query_beats": false
+      }
+    ],
+    "leaf_top_rate": 0.3333333333333333,
+    "query_wins_rate": 0.3333333333333333
+  },
+  "50pct": {
+    "n_sup": 400,
+    "n_qry": 400,
+    "cells": [
+      {
+        "seed": 0,
+        "gaps": {
+          "RBF (chosen)": 0.31470836136830216,
+          "ARD (learned)": 0.28835451159454184,
+          "leaf / tree": 0.2516655988259118
+        },
+        "leaf_is_top": false,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.3333333333333333,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 0.6666666666666666
+        },
+        "rmse_insample": 0.5984079312942764,
+        "rmse_query": 0.5953981526599129,
+        "query_beats": true
+      },
+      {
+        "seed": 1,
+        "gaps": {
+          "RBF (chosen)": 0.2116469424795121,
+          "ARD (learned)": 0.07961608276068044,
+          "leaf / tree": 0.27262245109119554
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.8333333333333334,
+          "leaf / tree": 0.16666666666666666
+        },
+        "rmse_insample": 0.6264262633660211,
+        "rmse_query": 0.5784244487297189,
+        "query_beats": true
+      },
+      {
+        "seed": 2,
+        "gaps": {
+          "RBF (chosen)": 0.21604181451426796,
+          "ARD (learned)": 0.16457368591896182,
+          "leaf / tree": 0.2459106771140287
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.16666666666666666,
+          "ARD (learned)": 0.5,
+          "leaf / tree": 0.3333333333333333
+        },
+        "rmse_insample": 0.6156759554292753,
+        "rmse_query": 0.5874097893779903,
+        "query_beats": true
+      }
+    ],
+    "leaf_top_rate": 0.6666666666666666,
+    "query_wins_rate": 1.0
+  },
+  "100pct": {
+    "n_sup": 800,
+    "n_qry": 800,
+    "cells": [
+      {
+        "seed": 0,
+        "gaps": {
+          "RBF (chosen)": 0.1642868276084536,
+          "ARD (learned)": 0.12248497322752183,
+          "leaf / tree": 0.28064570575805126
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.16666666666666666,
+          "ARD (learned)": 0.6666666666666666,
+          "leaf / tree": 0.16666666666666666
+        },
+        "rmse_insample": 0.5706138603746687,
+        "rmse_query": 0.5463489593527733,
+        "query_beats": true
+      },
+      {
+        "seed": 1,
+        "gaps": {
+          "RBF (chosen)": 0.15995547700781643,
+          "ARD (learned)": 0.014083778736755925,
+          "leaf / tree": 0.24598259229603892
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.8333333333333334,
+          "leaf / tree": 0.16666666666666666
+        },
+        "rmse_insample": 0.5891703284322669,
+        "rmse_query": 0.552485609221575,
+        "query_beats": true
+      },
+      {
+        "seed": 2,
+        "gaps": {
+          "RBF (chosen)": 0.15825696402828082,
+          "ARD (learned)": 0.09508800017752428,
+          "leaf / tree": 0.2500949043908789
+        },
+        "leaf_is_top": true,
+        "leaf_weight_sure": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.0,
+          "leaf / tree": 1.0
+        },
+        "leaf_weight_query": {
+          "RBF (chosen)": 0.0,
+          "ARD (learned)": 0.8333333333333334,
+          "leaf / tree": 0.16666666666666666
+        },
+        "rmse_insample": 0.5874725855193387,
+        "rmse_query": 0.5458290803927779,
+        "query_beats": true
+      }
+    ],
+    "leaf_top_rate": 1.0,
+    "query_wins_rate": 1.0
+  },
+  "checks": {
+    "leaf_top_gap_all_cells": false,
+    "query_selector_wins_all_cells": false
+  }
+}

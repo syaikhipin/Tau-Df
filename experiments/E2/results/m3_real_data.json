@@ -1,0 +1,66 @@
+{
+  "california": [
+    {
+      "channel": "RBF (chosen)",
+      "tau_df": -12.505202595652207,
+      "df_boot": 209.96215984965292,
+      "tr_S": 222.46736244530513,
+      "tau_boot": 0.0,
+      "tau_boot_std": 0.0,
+      "measured_gap": 0.1642868276084536
+    },
+    {
+      "channel": "ARD (learned)",
+      "tau_df": -10.017535095665181,
+      "df_boot": 193.21287928874887,
+      "tr_S": 203.23041438441405,
+      "tau_boot": 0.0,
+      "tau_boot_std": 0.0,
+      "measured_gap": 0.12248497322752183
+    },
+    {
+      "channel": "leaf / tree",
+      "tau_df": 72.29793885056688,
+      "df_boot": 788.602997923075,
+      "tr_S": 716.3050590725081,
+      "tau_boot": 0.007575367719065652,
+      "tau_boot_std": 0.0003687303673295193,
+      "measured_gap": 0.28064570575805126
+    }
+  ],
+  "taiwan": [
+    {
+      "channel": "RBF (chosen)",
+      "tau_df": 4.616709799607634,
+      "df_boot": 694.021325839148,
+      "tr_S": 689.4046160395403,
+      "tau_boot": 0.0,
+      "tau_boot_std": 0.0,
+      "measured_gap": 1.3802456365859679
+    },
+    {
+      "channel": "ARD (learned)",
+      "tau_df": 5.718762691648294,
+      "df_boot": 796.6435765862841,
+      "tr_S": 790.9248138946358,
+      "tau_boot": 0.0,
+      "tau_boot_std": 0.0,
+      "measured_gap": 0.9655437329522045
+    },
+    {
+      "channel": "leaf / tree",
+      "tau_df": 66.78531609040954,
+      "df_boot": 784.7139092808901,
+      "tr_S": 717.9285931904806,
+      "tau_boot": 0.02168066233579728,
+      "tau_boot_std": 0.0009850636036160129,
+      "measured_gap": 0.9866737440772292
+    }
+  ],
+  "ranking": {
+    "california_tau_df_top_agrees": true,
+    "california_tau_boot_top_agrees": true,
+    "taiwan_tau_df_top_agrees": false,
+    "taiwan_tau_boot_top_agrees": false
+  }
+}

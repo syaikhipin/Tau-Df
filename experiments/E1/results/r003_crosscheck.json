@@ -1,0 +1,159 @@
+{
+  "tolerance": 0.02,
+  "datasets": {
+    "california": {
+      "ledger_ours": [
+        {
+          "name": "RBF (chosen)",
+          "support_r2": 0.8551377917682372,
+          "query_r2": 0.6908509641597836,
+          "gap": 0.1642868276084536,
+          "test_rmse": 0.6443480630528354
+        },
+        {
+          "name": "ARD (learned)",
+          "support_r2": 0.8617778472510266,
+          "query_r2": 0.7392928740235047,
+          "gap": 0.12248497322752183,
+          "test_rmse": 0.5937576783627617
+        },
+        {
+          "name": "leaf / tree",
+          "support_r2": 0.9997034074322864,
+          "query_r2": 0.7190577016742351,
+          "gap": 0.28064570575805126,
+          "test_rmse": 0.5689627428168905
+        }
+      ],
+      "ledger_upstream": [
+        {
+          "name": "RBF (chosen)",
+          "support_r2": 0.8551377917682372,
+          "query_r2": 0.6908509641597836,
+          "gap": 0.1642868276084536,
+          "test_rmse": 0.6443480630528354
+        },
+        {
+          "name": "ARD (learned, Ch. 3)",
+          "support_r2": 0.8617778472510266,
+          "query_r2": 0.7392928740235047,
+          "gap": 0.12248497322752183,
+          "test_rmse": 0.5937576783627617
+        },
+        {
+          "name": "leaf / tree (Ch. 4)",
+          "support_r2": 0.9997034074322864,
+          "query_r2": 0.7190577016742351,
+          "gap": 0.28064570575805126,
+          "test_rmse": 0.5689627428168905
+        }
+      ],
+      "max_delta": 0.0,
+      "within_tol": true,
+      "fusion_ours": {
+        "names": [
+          "RBF (chosen)",
+          "ARD (learned)",
+          "leaf / tree"
+        ],
+        "sigma2": 0.0018377026659763768,
+        "query": {
+          "weights": {
+            "RBF (chosen)": 0.16666666666666666,
+            "ARD (learned)": 0.6666666666666666,
+            "leaf / tree": 0.16666666666666666
+          },
+          "lam": 0.1,
+          "test_rmse": 0.5463489593527733
+        },
+        "in_sample": {
+          "weights": {
+            "RBF (chosen)": 0.0,
+            "ARD (learned)": 0.0,
+            "leaf / tree": 1.0
+          },
+          "lam": 0.004641588833612777,
+          "test_rmse": 0.5706138603746687
+        }
+      },
+      "fusion_upstream": {
+        "names": [
+          "RBF (chosen)",
+          "ARD (learned, Ch. 3)",
+          "leaf / tree (Ch. 4)"
+        ],
+        "sigma2": 0.0018377026659763768,
+        "query": {
+          "weights": {
+            "RBF (chosen)": 0.16666666666666666,
+            "ARD (learned, Ch. 3)": 0.6666666666666666,
+            "leaf / tree (Ch. 4)": 0.16666666666666666
+          },
+          "lam": 0.1,
+          "test_rmse": 0.5463489593527733
+        },
+        "in_sample": {
+          "weights": {
+            "RBF (chosen)": 0.0,
+            "ARD (learned, Ch. 3)": 0.0,
+            "leaf / tree (Ch. 4)": 1.0
+          },
+          "lam": 0.004641588833612777,
+          "test_rmse": 0.5706138603746687
+        }
+      }
+    },
+    "taiwan": {
+      "ledger_ours": [
+        {
+          "name": "RBF (chosen)",
+          "support_r2": 0.9397167172422854,
+          "query_r2": -0.4405289193436823,
+          "gap": 1.3802456365859679,
+          "test_rmse": 0.50097733742857
+        },
+        {
+          "name": "ARD (learned)",
+          "support_r2": 0.9993145810288571,
+          "query_r2": 0.03377084807665254,
+          "gap": 0.9655437329522045,
+          "test_rmse": 0.42084089512812645
+        },
+        {
+          "name": "leaf / tree",
+          "support_r2": 0.9991430783465904,
+          "query_r2": 0.012469334269361254,
+          "gap": 0.9866737440772292,
+          "test_rmse": 0.41584517161470563
+        }
+      ],
+      "ledger_upstream": [
+        {
+          "name": "RBF (chosen)",
+          "support_r2": 0.9397167172422854,
+          "query_r2": -0.4405289193436823,
+          "gap": 1.3802456365859679,
+          "test_rmse": 0.50097733742857
+        },
+        {
+          "name": "ARD (learned, Ch. 3)",
+          "support_r2": 0.9993145810288571,
+          "query_r2": 0.03377084807665254,
+          "gap": 0.9655437329522045,
+          "test_rmse": 0.42084089512812645
+        },
+        {
+          "name": "leaf / tree (Ch. 4)",
+          "support_r2": 0.9991430783465904,
+          "query_r2": 0.012469334269361254,
+          "gap": 0.9866737440772292,
+          "test_rmse": 0.41584517161470563
+        }
+      ],
+      "max_delta": 0.0,
+      "within_tol": true
+    }
+  },
+  "fusion_max_delta": 0.0,
+  "within_tolerance": true
+}
